@@ -56,7 +56,6 @@ export default function RegisterProductPage() {
     const updatedProducts = [...existingProducts, newProduct]
     sessionStorage.setItem('products', JSON.stringify(updatedProducts))
     
-    console.log('New product:', newProduct)
     toast({
       title: "Product Registered",
       description: "The new product has been successfully added.",
@@ -88,8 +87,8 @@ export default function RegisterProductPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="p-4 border-b">
+    <div className="min-h-screen bg-background text-foreground flex flex-col items-center">
+      <header className="w-full p-4 border-b">
         <nav className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Car className="h-6 w-6" />
@@ -108,82 +107,84 @@ export default function RegisterProductPage() {
       </header>
 
       <main className="container mx-auto mt-8 px-4">
-        <h1 className="text-3xl font-bold mb-8">Register New Product</h1>
-        <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto">
-          <div>
-            <Label htmlFor="name">Product Name</Label>
-            <Input
-              id="name"
-              name="name"
-              value={product.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <Label htmlFor="price">Price</Label>
-            <Input
-              id="price"
-              name="price"
-              value={product.price}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <Label htmlFor="range">Range (miles)</Label>
-            <Input
-              id="range"
-              name="range"
-              value={product.range}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <Label htmlFor="chargingTime">Charging Time (hours)</Label>
-            <Input
-              id="chargingTime"
-              name="chargingTime"
-              value={product.chargingTime}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <Label htmlFor="description">Description</Label>
-            <Textarea
-              id="description"
-              name="description"
-              value={product.description}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <Label htmlFor="imageUrl">Image URL</Label>
-            <Input
-              id="imageUrl"
-              name="imageUrl"
-              value={product.imageUrl}
-              onChange={handleChange}
-              placeholder="Enter image URL"
-            />
-          </div>
-          <div>
-            <Label htmlFor="imageFile">Or upload an image</Label>
-            <Input
-              id="imageFile"
-              type="file"
-              onChange={handleFileChange}
-              accept="image/*"
-              className="cursor-pointer"
-            />
-          </div>
-          <Button type="submit" className="w-full">
-            <Plus className="mr-2 h-4 w-4" /> Register Product
-          </Button>
-        </form>
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h1 className="text-3xl font-bold mb-8 text-center">Register New Product</h1>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <Label htmlFor="name">Product Name</Label>
+              <Input
+                id="name"
+                name="name"
+                value={product.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="price">Price</Label>
+              <Input
+                id="price"
+                name="price"
+                value={product.price}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="range">Range (miles)</Label>
+              <Input
+                id="range"
+                name="range"
+                value={product.range}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="chargingTime">Charging Time (hours)</Label>
+              <Input
+                id="chargingTime"
+                name="chargingTime"
+                value={product.chargingTime}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="description">Description</Label>
+              <Textarea
+                id="description"
+                name="description"
+                value={product.description}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="imageUrl">Image URL</Label>
+              <Input
+                id="imageUrl"
+                name="imageUrl"
+                value={product.imageUrl}
+                onChange={handleChange}
+                placeholder="Enter image URL"
+              />
+            </div>
+            <div>
+              <Label htmlFor="imageFile">Or upload an image</Label>
+              <Input
+                id="imageFile"
+                type="file"
+                onChange={handleFileChange}
+                accept="image/*"
+                className="cursor-pointer"
+              />
+            </div>
+            <Button type="submit" className="w-full">
+              <Plus className="mr-2 h-4 w-4" /> Register Product
+            </Button>
+          </form>
+        </div>
       </main>
     </div>
   )
