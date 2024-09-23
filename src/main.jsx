@@ -8,7 +8,7 @@ import '@/styles/globals.css';
 
 export function Main() {
   const location = useLocation();
-  const hideHeaderRoutes = ['/register-product']; 
+  const hideHeaderRoutes = ['/registrar-produto']; 
   const shouldHideHeader = hideHeaderRoutes.includes(location.pathname);
 
   return (
