@@ -88,7 +88,7 @@ export default function About() {
           <TabsContent value="developers">
             <div className="flex items-center justify-center mb-4">
               <Car className="h-6 w-6 mr-2" />
-              <h2 className="text-xl font-semibold">Meet Our Developers</h2>
+              <h2 className="text-xl font-semibold"> Conheça nossos desenvolvedores</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {developers.map((developer, index) => (
