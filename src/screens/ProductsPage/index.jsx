@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Battery, Zap } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Cta } from '@/components/Cta'
 
 const defaultProducts = [
   { id: 'default1', name: "Model E", price: "$39,900", range: "250 miles", chargingTime: "6 hours", imageUrl: "/car1.jpg?height=200&width=300" },
@@ -58,7 +59,10 @@ export default function ProductsPage() {
                 <Button>Learn More</Button>
               </CardFooter>
             </Card>
+
+            
           ))}
+          <Cta/>
         </div>
       </main>
     </div>
