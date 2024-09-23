@@ -2,11 +2,18 @@ import { useState, useEffect } from 'react'
 import { Battery, Zap } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Cta } from '@/components/Cta'
 
 const defaultProducts = [
-  { id: 'default1', name: "Model E", price: "$39,900", range: "250 miles", chargingTime: "6 hours", imageUrl: "/car1.jpg?height=200&width=300" },
-  { id: 'default2', name: "Eco Rider", price: "$45,000", range: "300 miles", chargingTime: "5 hours", imageUrl: "/car2.jpg?height=200&width=300" },
-  { id: 'default3', name: "Thunderbolt", price: "$55,000", range: "350 miles", chargingTime: "4 hours", imageUrl: "/car3.jpeg?height=200&width=300" },
+  { "id": "default1", "name": "Model E", "price": "$39,900", "range": "250 miles", "chargingTime": "6 hours", "imageUrl": "/car1.jpg?height=200&width=300" },
+  { "id": "default2", "name": "Eco Rider", "price": "$45,000", "range": "300 miles", "chargingTime": "5 hours", "imageUrl": "/car2.jpg?height=200&width=300" },
+  { "id": "default3", "name": "Thunderbolt", "price": "$55,000", "range": "350 miles", "chargingTime": "4 hours", "imageUrl": "/car3.jpeg?height=200&width=300" },
+  { "id": "car4", "name": "Volt Cruiser", "price": "$42,500", "range": "280 miles", "chargingTime": "5.5 hours", "imageUrl": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=300&h=200&fit=crop" },
+  { "id": "car5", "name": "Electron GT", "price": "$58,000", "range": "320 miles", "chargingTime": "4.5 hours", "imageUrl": "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?w=300&h=200&fit=crop" },
+  { "id": "car6", "name": "Green Streak", "price": "$37,800", "range": "240 miles", "chargingTime": "6.5 hours", "imageUrl": "https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { "id": "car7", "name": "Eco Sprinter", "price": "$41,200", "range": "270 miles", "chargingTime": "5.8 hours", "imageUrl": "https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?w=300&h=200&fit=crop" },
+  { "id": "car8", "name": "Fusion X", "price": "$49,900", "range": "310 miles", "chargingTime": "5 hours", "imageUrl": "https://images.unsplash.com/photo-1682428592343-d7a4724cfeb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { "id": "car9", "name": "Solar Glide", "price": "$52,500", "range": "330 miles", "chargingTime": "4.2 hours", "imageUrl": "https://images.pexels.com/photos/2526127/pexels-photo-2526127.jpeg?w=300&h=200&fit=crop" }
 ]
 
 export default function ProductsPage() {
@@ -26,7 +33,7 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-background text-foreground">
 
       <main className="container mx-auto mt-8 px-4">
-        <h1 className="text-3xl font-bold mb-8">Our Electric Cars</h1>
+        <h1 className="text-3xl font-bold mb-8">Nossos carros elétricos</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
             <Card key={product.id}>
@@ -58,7 +65,10 @@ export default function ProductsPage() {
                 <Button>Learn More</Button>
               </CardFooter>
             </Card>
+
+            
           ))}
+          <Cta/>
         </div>
       </main>
     </div>

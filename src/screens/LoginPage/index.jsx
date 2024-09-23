@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useToast } from "@/components/ui/use-toast"
 import { useNavigate } from 'react-router-dom'
+import { Badge } from '@/components/ui/badge'
 
 export default function LoginPage() {
   const [username, setUsername] = useState('')
@@ -20,7 +21,7 @@ export default function LoginPage() {
         title: "Login Successful",
         description: "You have been logged in successfully.",
       })
-      navigate('/register-product')
+      navigate('/registrar-produto')
     } else {
       toast({
         title: "Login Failed",
@@ -62,8 +63,8 @@ export default function LoginPage() {
                 </Button>
             </form>
 
-            <h1 className='mt-6'>Login: admin</h1>
-            <h1>Pass: password</h1>
+              <Badge className="mt-4 mr-2">Login: admin</Badge>
+              <Badge>Pass: password</Badge>
             </div>
 
             
