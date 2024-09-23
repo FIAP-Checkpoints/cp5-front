@@ -4,6 +4,7 @@ function Footer() {
         <footer className="mt-16 bg-muted py-8">
             <div className="container mx-auto text-center">
             <p>&copy; 2024 ElectroDrive. All rights reserved.</p>
+            <p>add icons here</p>
             </div>
       </footer>
       </>
