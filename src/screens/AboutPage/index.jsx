@@ -51,16 +51,16 @@ const developers = [
 
 const faqs = [
   {
-    question: "What types of electric cars do you offer?",
-    answer: "We offer a wide range of electric cars, from compact models to luxury vehicles.",
+    question: "O que vocês usaram para estilização?",
+    answer: "TailwindCSS & Shadcn.",
   },
   {
-    question: "How do I schedule a test drive?",
-    answer: "You can schedule a test drive through our website or by contacting our customer service.",
+    question: "Como fizeram a página de produtos?",
+    answer: "Fizemos uma data e utilizamos um map().",
   },
   {
-    question: "What financing options are available?",
-    answer: "We provide various financing options to make your purchase easier.",
+    question: "Quais tecnologias utilizaram para Rotas?",
+    answer: "Utilizamos React Router DOM.",
   },
 ];
 
@@ -72,12 +72,12 @@ export default function About() {
       <div className="max-w-2xl text-center">
         <h1 className="text-3xl font-bold mb-4">About ElectroDrive</h1>
         <p className="mb-6">
-          Welcome to ElectroDrive, your go-to shop for all things electric cars! Our mission is to provide the best electric vehicles and a seamless shopping experience.
+        Bem-vindo à ElectroDrive, sua loja preferida de todos os itens de carros elétricos! Nossa missão é fornecer os melhores veículos elétricos e uma experiência de compra perfeita.
         </p>
         
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-6">
           <TabsList>
-            <TabsTrigger value="developers" className="mr-2">Developers</TabsTrigger>
+            <TabsTrigger value="developers" className="mr-2">Desenvolvedores</TabsTrigger>
             <TabsTrigger value="faqs">FAQs</TabsTrigger>
           </TabsList>
 
