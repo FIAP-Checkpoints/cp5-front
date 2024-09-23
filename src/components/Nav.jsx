@@ -49,7 +49,7 @@ NavItem.defaultProps = {
   mobile: false,
 };
 
-export function Header() {
+export function Nav() {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
