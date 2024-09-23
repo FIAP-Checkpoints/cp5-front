@@ -3,6 +3,7 @@ import { Car, HelpCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { GithubIcon } from 'lucide-react'; 
+import { Cta } from '@/components/Cta';
 
 const developers = [
   {
@@ -64,6 +65,9 @@ const faqs = [
   },
 ];
 
+
+
+
 export default function About() {
   const [activeTab, setActiveTab] = useState("developers");
 
@@ -123,6 +127,10 @@ export default function About() {
           Go Back
         </Button>
       </div>
+
+      <Cta/>
     </div>
+
+    
   );
 }
