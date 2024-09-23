@@ -17,7 +17,7 @@ const developers = [
     name: 'André Nakamatsu',
     role: 'Backend Developer',
     description: 'André foi responsavel pelo funcionamento do sistema de registro.',
-    image: 'url_to_image', 
+    image: 'https://avatars.githubusercontent.com/u/103290037?v=4', 
     github: 'https://github.com/andrenakarocha',
   },
   {
@@ -45,7 +45,7 @@ const developers = [
     name: 'Wellington Cidade',
     role: 'Professor',
     description: 'Cidade foi o professor que passou este projeto para nós.',
-    image: 'url_to_image', 
+    image: 'https://avatars.githubusercontent.com/u/28817008?v=4', 
     github: 'https://github.com/welltecnc',
   },
 ];
