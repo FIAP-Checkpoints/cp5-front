@@ -25,7 +25,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<ErrorPage />} />
         <Route 
-          path="/register-product" 
+          path="/registrar-produto" 
           element={
             <PrivateRoute>
               <RegisterProductPage />

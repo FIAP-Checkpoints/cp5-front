@@ -1,4 +1,4 @@
-import { Car } from 'lucide-react';
+import { Car, MenuIcon } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu } from '@headlessui/react';
@@ -19,7 +19,7 @@ export function Header() {
         <div className="md:hidden">
           <Menu>
             <Menu.Button className="flex items-center justify-center p-2 bg-gray-200 rounded-md">
-              Menu
+              <MenuIcon/>
             </Menu.Button>
             <Transition
               as={React.Fragment}

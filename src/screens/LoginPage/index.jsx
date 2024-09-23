@@ -20,7 +20,7 @@ export default function LoginPage() {
         title: "Login Successful",
         description: "You have been logged in successfully.",
       })
-      navigate('/register-product')
+      navigate('/registrar-produto')
     } else {
       toast({
         title: "Login Failed",

@@ -10,7 +10,7 @@ const developers = [
     name: 'Matheus Montovaneli',
     role: 'Frontend Developer',
     description: 'Matheus foi responsavel pela interface e desenvolvimento do Front.',
-    image: 'url_to_image', 
+    image: '/matheus.jpeg', 
     github: 'https://github.com/imneli',
   },
   {
