@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, useLocation } from 'react-router-dom';
 import App from './App';
 import Footer from './components/Footer';
-import { Header } from './components/Header';
+import { Header } from './components/Nav';
 import '@/styles/globals.css';
 
 export function Main() {
