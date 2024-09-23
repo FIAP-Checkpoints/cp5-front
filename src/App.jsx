@@ -5,6 +5,7 @@ import LoginPage from '@/screens/LoginPage';
 import RegisterProductPage from '@/screens/RegisterProductPage';
 import { ErrorPage } from './screens/Error';
 import { Toaster } from "./components/ui/toaster";
+import About from './screens/AboutPage';
 
 import '@/styles/globals.css';
 
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<ErrorPage />} />
         <Route 
           path="/register-product" 
