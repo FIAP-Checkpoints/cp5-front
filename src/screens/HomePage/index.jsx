@@ -1,6 +1,7 @@
-import { Zap, Award, PhoneCall, ChevronsUp } from 'lucide-react';
+import { Zap, Award, PhoneCall } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Cta } from '@/components/Cta';
 
 
 export default function HomePage() {
@@ -9,10 +10,6 @@ export default function HomePage() {
     "/car2.jpg?height=400&width=800&text=Carro+Elétrico+2",
     "/car3.jpeg?height=400&width=800&text=Carro+Elétrico+3",
   ];
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
@@ -83,11 +80,11 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold mb-4 text-center">Depoimentos de Clientes</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-4 border rounded-lg bg-white shadow-sm">
-              <p className="italic">"A experiência de dirigir meu carro elétrico da ElectroDrive mudou minha visão sobre a mobilidade!"</p>
+              <p className="italic">&quot;A experiência de dirigir meu carro elétrico da ElectroDrive mudou minha visão sobre a mobilidade!&quot;</p>
               <p className="font-semibold mt-2">— Ana Oliveira</p>
             </div>
             <div className="p-4 border rounded-lg bg-white shadow-sm">
-              <p className="italic">"Economizei tanto em combustível e a manutenção é mínima. Recomendo a todos!"</p>
+              <p className="italic">&quot;Economizei tanto em combustível e a manutenção é mínima. Recomendo a todos!&quot;</p>
               <p className="font-semibold mt-2">— Carlos Silva</p>
             </div>
           </div>
@@ -95,12 +92,7 @@ export default function HomePage() {
 
       </main>
 
-      <button 
-        onClick={scrollToTop} 
-        className="fixed bottom-4 right-4 bg-primary text-white py-4 px-4 rounded-full shadow-lg hover:bg-primary-dark transition"
-      >
-        <ChevronsUp />
-      </button>
+      <Cta/>
     </div>
   );
 }
