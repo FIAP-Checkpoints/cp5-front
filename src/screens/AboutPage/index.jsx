@@ -24,7 +24,7 @@ const developers = [
     name: 'Caio Suzano',
     role: 'UI/UX Designer',
     description: 'Caio foi responsavel por pegar assets e imagens para nosso projeto, além de dar ideias para UX.',
-    image: 'url_to_image', 
+    image: '/caio.png', 
     github: 'https://github.com/',
   },
   {
