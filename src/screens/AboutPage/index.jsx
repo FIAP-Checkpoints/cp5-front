@@ -31,8 +31,8 @@ const developers = [
     name: 'Guilherme, Gozzi',
     role: 'Project Manager',
     description: 'Guilherme foi responsavel pela organização do repositório.',
-    image: 'url_todana_image', 
-    github: 'https://github.com/',
+    image: '/Linard.jpeg', 
+    github: 'https://github.com/linard07',
   },
   {
     name: 'Lucas Vasquez',
