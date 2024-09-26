@@ -12,7 +12,7 @@ A Loja de Carros Elétricos é uma aplicação web onde os usuários podem explo
 - **About:** Informações sobre a equipe de desenvolvimento e FAQ.
 - **Products:** Catálogo completo de carros elétricos disponíveis.
 - **Login:** Sistema de autenticação para acesso a funcionalidades exclusivas.
-- **Register:** Página para cadastro de novos produtos (acesso restrito).
+- **Register Product:** Página para cadastro de novos produtos.
 - **Error Page:** Página personalizada para rotas não encontradas.
 
 ## 📦 Tecnologias Utilizadas
