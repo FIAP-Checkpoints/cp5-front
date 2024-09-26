@@ -31,15 +31,15 @@ const developers = [
     name: 'Guilherme, Gozzi',
     role: 'Project Manager',
     description: 'Guilherme foi responsavel pela organização do repositório.',
-    image: '/Linard.jpeg', 
+    image: '/Linard.jpg', 
     github: 'https://github.com/linard07',
   },
   {
     name: 'Lucas Vasquez',
     role: 'UI/UX Designer',
     description: 'Lucas foi responsavel por buscar icons para utilização no projeto.',
-    image: 'url_to_image', 
-    github: 'https://github.com/',
+    image: '/vasquez.jpg', 
+    github: 'https://github.com/Bloue049',
   },
   {
     name: 'Wellington Cidade',
